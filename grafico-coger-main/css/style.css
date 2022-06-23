@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.container-charts {
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+.dashboard-flex-parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin: 10px;
+    background-color: #F8F8FF;
+}
+
+.dashboard-box:hover {
+    transition: 0.5s;
+    box-shadow: 0 0 1rem rgba(156, 156, 156, 0.4);
+    transform: scale(1.05);
+}
+
+div.box-icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5px;
+}
+
+div.box-icon svg {
+    font-size: 35px;
+}
+
+div.value {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+div.type {
+    margin-top: 3px;
+    font-size: 15px;
+}
+
+.box-icms {
+    color: #5fa6f1;
+}
+
+.box-ipva {
+    color: #9fa5aa;
+}
+
+.box-outros {
+    color: #b08dcc;
+}
+
+.box-itcd {
+    color: #60e7bc;
+}
+
+.box-irrf {
+    background-color: rgba(106, 133, 223, 0.1);
+    color: #33b6ca;
+}
+
+.box-taxas {
+    background-color: rgba(106, 133, 223, 0.1);
+    color: #f8dc86;
+}
+
+.flex-icms {
+    background-color: #007bff;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+}
+
+.flex-ipva {
+    background-color: #6c757d;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.flex-itcd {
+    background-color: #28a745;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.flex-irrf {
+    background-color: #17a2b8;
+    border-radius: 6px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.flex-taxas {
+    background-color: #ffc107;
+    border-radius: 6px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.flex-outros {
+    background-color: #6f42c1;
+    border-radius: 6px;
+    color: white;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.div-select {
+    width: 250px;
+    overflow: hidden;
+}
+
+.div-select select {
+    margin-bottom: 15px;
+}
+/* --------------------------------------- */
+/*   Gráficos  */
+/* --------------------------------------- */
+.dashboard-flex-parent-arrecada {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(49%, 1fr));
+    gap: 15px;
+    padding : 10px;
+    /* padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+    height: 480px;
+}
+
+.dashboard-box-donut {
+    border-radius: 8px;
+    background-color: #f7f7fa;
+    ;
+}
+
+.dashboard-box-arrecada {
+    border-radius: 8px;
+    color: #f5f5f5;
+    background-color: #f7f7fa;
+    ;
+}
+
+
+.dashboard-flex-parent-arrecadacao {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    height: auto;
+}
+
+.dashboard-flex-parent-repasse {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+    /* height: 950px; */
+}
+
+.dashboard-box-repasse {
+    border-radius: 8px;
+    margin: 10px;
+    color: #f5f5f5;
+    background-color: #f7f7fa;
+}
+
+.charts-box-repasse {
+    border-radius: 8px;
+    background-color: #f7f7fa;
+}
+
+.entradas-imposto {
+    display: grid;
+    grid-template-columns: 1.6fr 5fr;
+    gap: 15px;
+    height: 780px;
+    padding: 10px;
+}
+
+.charts-box-imposto {
+    border-radius: 8px;
+    color: #f5f5f5;
+    background-color: #f7f7fa;
+    padding: 10px;
+}
+
+.entradas-repasse {
+    display: grid;
+    grid-template-columns: 1.6fr 5fr;
+    gap: 15px;
+    padding: 10px;
+    height: 780px;
+}
+
+.remesa {
+    border-radius: 8px;
+    color: #f5f5f5;
+    background-color: #c3c3cc;
+    padding: 10px;
+}
+
+form {
+    margin: 10px;
+    padding: 10px;
+}
+
+form.input {
+    padding: 15px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: none;
+    outline: 0;
+}
+@media (max-width: 800px) {
+    .dashboard-flex-parent-arrecada {
+        display: flex;
+        flex-direction: column;
+        height: 340px;
+    }
+    .dashboard-flex-parent-repasse {
+        display: flex;
+        flex-direction: column;
+        height: 380px;
+        align-items: center;
+    }
+    .entradas-imposto {
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+    }
+    .entradas-repasse {
+        display: flex;
+        flex-direction: column;
+        height: 580px;
+    }
+}
